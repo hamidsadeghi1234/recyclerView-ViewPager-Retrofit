@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary">
+<ImageView
+    android:id="@+id/clothing_image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:layout_marginBottom="@dimen/standard_margin"
+    tools:src="@drawable/a6"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/standard_margin"
+        android:layout_alignBottom="@id/clothing_image">
+    <TextView
+        android:id="@+id/clothing_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/large_font_size"
+        tools:text="عنوان لباس"
+        />
+    <TextView
+        android:id="@+id/clothing_viewCount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/large_font_size"
+        android:layout_below="@+id/clothing_title"
+        android:text="700"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/clothing_viewCount_text"
+        android:layout_alignTop="@id/clothing_viewCount_text"
+        android:layout_toLeftOf="@id/clothing_viewCount_text"
+        tools:src="@drawable/ic_action_visibility_off"/>
+
+    </RelativeLayout>
+</RelativeLayout>

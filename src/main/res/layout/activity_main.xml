@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    tools:context=".view.activity.MainActivity" >
+    <Button
+        android:id="@+id/btn_get_users_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_JSON_weather"
+        android:layout_centerHorizontal="true"
+        android:text="get users list" />
+    <Button
+        android:id="@+id/btn_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/btn_JSON_weather"
+        android:layout_alignRight="@id/btn_JSON_weather"
+        android:text="ViewPager" />
+
+    <Button
+        android:id="@+id/btn_recycler_view"
+        android:layout_below="@+id/btn_view_pager"
+        android:layout_width="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btn_JSON_weather"
+        android:layout_alignRight="@id/btn_JSON_weather"
+        android:text="recyclerView" />
+
+        <Button
+            android:id="@+id/btn_JSON_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_recycler_view"
+            android:text="JSON_weather" />
+
+    <Button
+        android:id="@+id/btn_srore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_JSON_weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="store new user" />
+</RelativeLayout>
